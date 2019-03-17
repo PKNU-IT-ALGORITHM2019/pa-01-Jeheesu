@@ -78,7 +78,7 @@ public class Prog01 {
 	public static void down(int correctWord) {
 		int i = correctWord - 1;
 		for(int y = i; y>=0; y--) {
-			if( words[i].voca.compareToIgnoreCase(words[correctWord].voca) == 0 ) {
+			if( words[y].voca.compareToIgnoreCase(words[correctWord].voca) == 0 ) {
 				sameNumber++;
 				downcnt++;
 			}
