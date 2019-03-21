@@ -34,6 +34,11 @@ public class Prog01 {
     			str=str.replaceAll("'", "").replaceAll(" ", "");
     			index = 0;
     			int cnt = vocaFind(str, 0, size-1);
+			
+			/* 이렇게 class member index를 이용해서 found와 not found를 구분하는 것이 최선인가 ? 좋지 않은 방법임 */
+			/* 예를 들어 not found의 경우 cnt값을 음수로 반환하는 방법 등이 좀 더 나을것 같음 */
+			/* index, upcnt, downcnt 등의 클래스 멤버르 사용하는 것은 여러 면에서 좋지 않음 */
+			/* 이런 부분에 대한 추가 설명이 필요하면 수업 중에 개인적으로 질문할 것 */
     			if(index==-1) {
     				notFound(cnt);
 				}
